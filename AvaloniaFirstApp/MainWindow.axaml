@@ -1,0 +1,56 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        Width="500"
+        Height="500"
+        x:Class="FirstApp.MainWindow"
+        Title="FirstApp">
+    <Grid VerticalAlignment="Top" HorizontalAlignment="Center">
+        <Grid.ColumnDefinitions>
+			<ColumnDefinition Width="100"></ColumnDefinition>
+			<ColumnDefinition Width="200"></ColumnDefinition>
+			<ColumnDefinition Width="100"></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="100" />
+			<RowDefinition Height="100" />
+			<RowDefinition Height="200" />
+		</Grid.RowDefinitions>
+        <StackPanel Grid.ColumnSpan="3" Grid.Row="2" >
+
+            <Border Background="Gainsboro"
+            BorderBrush="Black"
+            BorderThickness="2"
+            CornerRadius="5"
+            BoxShadow="10 10 10 5 DarkGray"
+            >
+                <TextBlock x:Name="message" 
+                Margin="5" 
+                FontSize="20">
+                Box with a drop shadow</TextBlock>
+            </Border>
+            <Button
+             x:Name="clickMe" 
+             Click = "clickMeHandler"
+            Background="Blue"
+            Foreground="Yellow"
+            FontSize="20"
+            Margin="2"
+            Width="100"
+            Content="Click Me" 
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Grid.ColumnSpan="3" Grid.Row="2"
+            >
+            </Button>
+
+        </StackPanel>
+
+
+    </Grid>
+     
+
+
+</Window>
